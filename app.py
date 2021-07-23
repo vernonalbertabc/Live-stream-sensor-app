@@ -3,7 +3,8 @@
 
 from flask import Flask, jsonify,request,render_template,make_response
 import numpy as np
-import time
+#
+#import time
 import json
 
 app = Flask(__name__)
@@ -16,7 +17,7 @@ def main():
 
 @app.route("/data",methods=["GET","POST"])
 def get():
-    data = [time.time()*100,np.sin(time.time())*100 + np.random.random_sample()*100]
+    data = 2
     response = make_response(json.dumps(data))
     response.content_type = "application/json"
 
