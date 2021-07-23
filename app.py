@@ -3,9 +3,8 @@
 
 from flask import Flask, jsonify,request,render_template,make_response
 import numpy as np
-#
-#import time
-import json
+import time
+import pickle
 
 app = Flask(__name__)
 
@@ -17,8 +16,8 @@ def main():
 
 @app.route("/data",methods=["GET","POST"])
 def get():
-    data = 2
-    response = make_response(json.dumps(data))
+    data = [time.time()*100,np.sin(time.time())*100 + random.random()*100]
+    response = make_response(pickle.dumps(data))
     response.content_type = "application/json"
 
     return response
