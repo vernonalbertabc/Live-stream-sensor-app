@@ -1,4 +1,4 @@
-# Cloud deplyoment of sensor app
+# Live streaming of sensor data
 
 <img src="Streaming data.png">
 
@@ -7,6 +7,6 @@
 2. App created with Flask, JavaScript(within HTML) and HTML.
 3. Can be deployed on local machine or on a cloud application like Heroku
 
-Note: Heroku not recognising highcharts. Kindly let me know how it can be implemented
+Note: Heroku not recognising highcharts. Let me know how it can be implemented
 
 ```
