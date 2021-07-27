@@ -1,4 +1,4 @@
-# Live streaming of sensor data
+# Live streaming of simulated sensor data
 
 <img src="Streaming data.png">
 
